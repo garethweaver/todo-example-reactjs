@@ -1,10 +1,13 @@
-data = [
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+var data = [
   { text: 'learn react', done: true },
   { text: 'build an app', done: false }
 ]
 
 
-ToDoApp = React.createClass({
+var ToDoApp = React.createClass({
   getInitialState: function() {
     return {data: data}
   },
@@ -17,13 +20,13 @@ ToDoApp = React.createClass({
 
   addNewTodo: function(todo){
     // TODO: ajax to server
-    arr = this.state.data.slice()
+    var arr = this.state.data.slice()
     arr.push(todo)
     this.setState({data:arr})
   },
 
   toggleCheckedTodo: function(todoId){
-    updatedTodos = this.state.data.map(function(todo, i){
+    var updatedTodos = this.state.data.map(function(todo, i){
       if (i === todoId) todo.done = !todo.done
       return todo;
     })
@@ -50,7 +53,7 @@ ToDoApp = React.createClass({
 })
 
 
-TodoForm = React.createClass({
+var TodoForm = React.createClass({
   getInitialState: function () {
     return {text: ''}
   },
@@ -77,7 +80,7 @@ TodoForm = React.createClass({
   }
 })
 
-Todo = React.createClass({
+var Todo = React.createClass({
   handleChange: function(e) {
     this.props.onChange(this.props.id)
   },
@@ -94,7 +97,7 @@ Todo = React.createClass({
   }
 })
 
-TodoCounter = React.createClass({
+var TodoCounter = React.createClass({
   render: function() {
     return (
       <footer>{this.props.remaining} of {this.props.total} remaining</footer>
