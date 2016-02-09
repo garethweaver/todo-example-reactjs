@@ -1,0 +1,89 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css';
+@import '//fonts.googleapis.com/css?family=Roboto:400,700';
+
+::-webkit-input-placeholder {
+  color:rgba(255,255,255,0.8);
+}
+
+body {
+  font-family:Roboto, sans-serif;
+  background:#efefef;
+  margin:0;
+}
+
+.wrap {
+  text-align:center;
+  max-width:400px;
+  background:#FFF;
+  box-shadow:0 0 40px rgba(0,0,0,0.1);
+  margin:40px auto;
+}
+
+h1 {
+  background:#14CD96;
+  font-weight:700;
+  color:#FFF;
+  font-size:25px;
+  margin:0;
+  padding:20px 30px;
+}
+
+form {
+  display:flex;
+  margin:0;
+}
+
+input {
+  border:none;
+  background:#1FDAA2;
+  flex-grow:1;
+  color:#FFF;
+  padding:20px;
+}
+
+button {
+  background:#1FDAA2;
+  border:none;
+  color:#FFF;
+  font-weight:700;
+  text-transform:uppercase;
+  transition:background-color .2s;
+  padding:20px;
+}
+
+button:hover {
+  background:#14CD96;
+}
+
+input:focus,button:focus {
+  outline:none;
+}
+
+footer {
+  padding:20px;
+}
+
+ul {
+  text-align:left;
+  margin:0;
+}
+
+li {
+  border-bottom:1px dashed #ccc;
+}
+
+label {
+  display:block;
+  cursor:pointer;
+  transition:background-color .2s;
+  margin:0;
+  padding:20px;
+}
+
+.done-true {
+  background:#E7FFF8;
+}
+
+input[type="checkbox"] {
+  margin-right:10px;
+}

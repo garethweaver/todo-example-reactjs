@@ -1,0 +1,18 @@
+{
+  "name": "reactjs-todo-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8080"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garethweaver/reactjs-todo-example.git"
+  },
+  "homepage": "https://github.com/garethweaver/reactjs-todo-example#readme",
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
