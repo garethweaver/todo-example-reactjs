@@ -1,0 +1,10 @@
+{
+  "extends": ["standard", "standard-react", "standard-jsx"],
+  "rules": {
+    "no-multi-spaces": 0,
+    "key-spacing": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "spaced-comment": [2, "always", {"exceptions": ["-", "*"]}],
+    "react/jsx-indent-props": 0
+  }
+}
