@@ -1,0 +1,59 @@
+.todo {
+  display:       flex;
+
+  border-bottom: 1px dashed #ccc;
+}
+
+.todo.done-true {
+  transition: background-color .2s;
+
+  background: #e7fff8;
+}
+
+.todo__control {
+  flex:        1;
+
+  display:     flex;
+  align-items: center;
+
+  margin:      0;
+  padding:     20px;
+  cursor:      pointer;
+}
+
+.todo__control__check {
+  margin: 0 10px 0 0;
+}
+
+.todo__delete {
+  flex-shrink:   0;
+  align-self:    center;
+
+  display:       flex;
+  align-content: center;
+
+  padding:       10px;
+}
+
+.todo__delete:hover {
+  background: transparent;
+}
+
+.todo__delete:after {
+  transition:    background-color .2s;
+
+  content:       "\2715";
+  display:       block;
+  width:         20px;
+  height:        20px;
+  border-radius: 10px;
+  line-height:   20px;
+  font-weight:   100;
+  background:    #fff;
+  color:         #999;
+}
+
+.todo__delete:hover:after {
+  background: red;
+  color:      white;
+}

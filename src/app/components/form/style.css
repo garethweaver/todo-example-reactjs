@@ -1,0 +1,33 @@
+.todo__form {
+  display: flex;
+  margin:  0;
+}
+
+.todo__form__input {
+  flex-grow:  1;
+
+  padding:    20px;
+  border:     none;
+  font-size:  inherit;
+  background: #1fdaa2;
+  color:      #fff;
+}
+
+.todo__form__submitbtn {
+  transition:     background-color .2s;
+
+  padding:        20px;
+  font-weight:    700;
+  text-transform: uppercase;
+  background:     #1fdaa2;
+  color:          #fff;
+}
+
+.todo__form__submitbtn:hover {
+  background: #14cd96;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}

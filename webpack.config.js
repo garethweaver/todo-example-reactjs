@@ -1,24 +1,27 @@
 module.exports = {
-  entry: {
-    "app": "./app/main.jsx"
-  },
+  entry:   './src',
+  debug:   true,
+  devtool: 'eval',
+
   output: {
-    filename: "bundle.js"
-  },
-  resolve: {
-    extensions: ['', '.jsx', '.js']
+    filename: 'bundle.js'
   },
 
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015']
-        }
+        test:    /\.jsx?$/,
+        include: /src/,
+        loaders: ['babel']
+      },
+      {
+        test:    /\.css$/,
+        loader: 'style!css!postcss?browsers=last 2 versions'
       }
     ]
+  },
+
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   }
-};
+}

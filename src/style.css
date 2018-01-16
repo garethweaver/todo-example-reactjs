@@ -1,0 +1,46 @@
+@import '//fonts.googleapis.com/css?family=Roboto:400,700';
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  margin:      0;
+  font-family: Roboto, sans-serif;
+  font-size:   16px;
+  background:  #efefef;
+}
+
+h1 {
+  margin:      0;
+  padding:     20px 30px;
+  font-size:   25px;
+  font-weight: 100;
+  text-align:  center;
+  background:  #14cd96;
+  color:       #fff;
+}
+
+ul {
+  list-style: none;
+  margin:     0;
+  padding:    0;
+}
+
+button {
+  border:     none;
+  cursor:     pointer;
+  background: transparent;
+}
+
+footer {
+  padding:    20px;
+  text-align: center;
+}
+
+.wrap {
+  max-width:  400px;
+  margin:     40px auto;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
